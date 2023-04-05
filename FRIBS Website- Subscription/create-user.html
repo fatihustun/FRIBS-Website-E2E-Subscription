@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FRIBS - Subsciption</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navigaton">
+                <a href="index.html">
+                <img src="images/FRIBS-logo.png" alt="FRIBS-logo">
+                </a>
+                <a class="signin-button" href="https://www.netflix.com/tr-en/login">
+                    Sign In
+                </a>
+                <img class="progressbar" src="images/progressbar1.png" alt="progressbar1">
+        </nav>
+        <section>
+            <h3 class="create-user-info"> Create a <strong>user</strong> to start</h3>
+        </section>
+           
+            <form action="choose-plan.html" method="get">
+                <label class="step1-heading1">Personal Info</label>
+                <input class="name-box" type="text" placeholder="     Name" id="name-box" name="name-box" oninput="this.value = this.value.replace(/[0-9]/g, '')" required>
+                <input class="surname-box" type="text" placeholder="     Surname" id="surname-box" name="surname-box" oninput="this.value = this.value.replace(/[0-9]/g, '')" required>
+                <input class="phone-box" type="tel" placeholder="     Phone Number" id="phone-box" name="phone-box" pattern="[0-9]+" onkeydown="return event.keyCode >= 48 && event.keyCode <= 57 || event.keyCode === 8 || event.keyCode === 46 || event.keyCode === 37 || event.keyCode === 39" required>>
+                <input class="email-box" type="email" placeholder="     Email Address" id="email-box" name="email-box" oninput="this.value = this.value.replace(/\s+/g, '')" required>
+                
+                <label class="step1-heading2">Set Your Password</label>
+                <input class= "password-box" type="password" placeholder="     Password" id="password-box" name="password-box" required>
+                <input class= "comfirmpassword-box" type="password" placeholder="     Confirm you Password" id="comfirmpassword-box" name="comfirmpassword-box" required>
+
+                <input class="submitpersonalinfo-box" type="submit" value="NEXT" id="submitpersonalinfo-box" name="submitpersonalinfo-box">
+            </form>
+                <footer class="footer">
+                    <p class="copywrite">© 2023 FRIBS and its related entities. All Rights Reserved.</p>
+                </footer>
+        </body>
+</html>

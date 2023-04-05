@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FRIBS - Subsciption</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navigaton">
+                <a href="create-user.html">
+                <img src="images/FRIBS-logo.png" alt="FRIBS-logo">
+                </a>
+                <a class="signin-button" href="https://www.netflix.com/tr-en/login">
+                    Sign In
+                </a>            
+                <img class="progressbar" src="images/progressbar2.png" alt="progressbar2">
+        </nav>
+        <section>
+            <h3 class="chooseplan-info"> Choose Your <strong>Plan To Watch</strong></h3>
+        </section>
+        <form action="success-screen.html" method="get" enctype="text/plain">
+            <aside class="container1" ></aside>
+            <aside class="container2"></aside>
+            <aside class="container3"></aside>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="title1" >Basic</th>
+                        <th class="title2">Classic</th>
+                        <th class="title3">Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label class="sel1-explain" for="self1">Our FRIBS (With Ads) plan lets you watch exclusive series, hit movies, Originals, kids shows, and tons more.</label></td>
+                        <td><label class="sel2-explain" for="self2">Our FRIBS (No Ads) plan lets you watch exclusive series, hit movies, Originals, kids shows, and tons more with no ad interruptions.</label></td>
+                        <td><label class="sel3-explain" for="self3">Access 75+ channels with Live TV, Unlimited DVR, endless entertainment with Disney+ (No Ads), live sports with ESPN+ (With Ads), and award-winning Hulu originals with FRIBS (No Ads).</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="sel1-radio" type="radio" name="plan-selection" id="self1" value="self1"  ></td>
+                        <td><input class="sel2-radio" type="radio" name="plan-selection" id="self2" value="self2" ></td>
+                        <td><input class="sel3-radio" type="radio" name="plan-selection" id="self3" value="self3" checked></td>
+                    </tr>
+                    <tr>
+                        <td><label class="sel1-price" for="self1">7,95 €</label></td>
+                        <td><label class="sel2-price" for="self2">10,95 €</label></td>
+                        <td><label class="sel3-price" for="self3">12,95 €</label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="checkbox1" type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1" ></td>
+                        <td><label class="checkbox1-label" for="checkbox1">By checking this box, I confirm that I have read and agree to the terms and conditions of using this website, including but not limited to the privacy policy, user agreement, and any other applicable policies or agreements, and that I am fully aware of my rights and obligations as a user."</label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input class="checkbox2" type="checkbox" name="checkbox2" id="checkbox2" value="checkbox2" ></td>
+                        <td><label class="checkbox2-label" for="checkbox2">I consent to receiving marketing communications from [company name], including but not limited to newsletters, promotional offers, and other types of messages, and I understand that I can unsubscribe at any time by clicking the 'Unsubscribe' link in the emails or by contacting customer support.</label></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input class="complete-box" type="submit" value="Complete" id="complete-box">
+        </form>
+        <footer class="footer">
+            <p class="copywrite">© 2023 FRIBS and its related entities. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
